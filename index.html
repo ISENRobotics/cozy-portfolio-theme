@@ -1,30 +1,48 @@
 <!doctype html>
 <html ng-app="portfolio" >
     <head ng-controller="head" >
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="default-style" content="text/css; charset=utf-8" />
+
+        <!-- Let browser know website is optimized for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Import Google Icon Font -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons" />
+
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" />
 
-        <title>{{ title }}</title>
+        <!-- little correction -->
+        <link rel="stylesheet" type="text/css" href="app.css" />
+
+        <!-- title -->
+        <title>{{ banner.title }}</title>
     </head>
 
     <body>
-        <head>
+        <header class="indigo z-depth-1" ng-controller="banner" >
+            <img ng-src="{{ banner.avatar }}" alt="avatar" class="circle responsive-img" />
 
-        </head>
+            <h1 class="white-text" >{{ name }}</h1>
+            <h2 class="white-text" >{{ banner.content }}</h2>
+        </header>
 
         <main>
 
         </main>
 
         <!-- Compiled and minified JavaScript -->
-        <script type="application/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous" ></script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous" ></script>
         <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-        <script type="application/javscript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" ></script>
-        <script type="application/javscript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-aria.min.js" ></script>
-        <script type="application/javscript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js" ></script>
-        <script type="application/javscript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.min.js" ></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" ></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-aria.min.js" ></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js" ></script>
+        <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.min.js" ></script>
 
-        <script type="application/javscript" src="app.js" ></script>
+        <script type="application/javascript" src="app.js" ></script>
     </body>
 </html>
