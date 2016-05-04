@@ -38,12 +38,18 @@
 
             <div class="container" >
                 <ul>
-                    <li><a>qdfe</a></li>
-                    <li><a>qsd</a></li>
-                    <li><a>qsd</a></li>
-                    <li><a>qsd</a></li>
+                    <li class="waves-effect" ><a>{{ presentation.title }}</a></li>
+                    <li class="waves-effect" ><a>{{ educations.header }}</a></li>
+                    <li class="waves-effect" ><a>{{ skills.header }}</a></li>
+                    <li class="waves-effect" ><a>{{ experiences.header }}</a></li>
+                    <li class="waves-effect" ><a>{{ hobbies.header }}</a></li>
                 </ul>
+
+                <a class="btn-floating btn-large waves-effect waves-light red" >
+                    <i class="material-icons">email</i>
+                </a>
             </div>
+
         </header>
 
         <!-- main -->
@@ -52,12 +58,34 @@
         </main>
 
         <!-- footer -->
-        <footer>
+        <footer class="page-footer indigo z-depth-1" ng-controller="footer" >
+            <div class="container">
+                <div class="row white-text">
+                    <div class="col s12 m8 l10">
+                        <h2>{{ banner.title }}</h2>
+                    </div>
 
+                    <div class="col s12 m4 l2">
+                        <ul>
+                            <li><a>{{ presentation.title }}</a></li>
+                            <li><a>{{ educations.header }}</a></li>
+                            <li><a>{{ skills.header }}</a></li>
+                            <li><a>{{ experiences.header }}</a></li>
+                            <li><a>{{ hobbies.header }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container">
+                    © {{ date }} Copyright {{ name }}
+                </div>
+            </div>
         </footer>
 
         <!-- Compiled and minified JavaScript -->
-        <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous" ></script>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" ></script>
         <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
         <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" ></script>
