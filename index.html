@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="default-style" content="text/css; charset=utf-8" />
+        <meta name="description" content="{{ banner.content }}" />
 
         <!-- Let browser know website is optimized for mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,21 +19,42 @@
         <!-- little correction -->
         <link rel="stylesheet" type="text/css" href="app.css" />
 
+        <!-- favicon -->
+        <link rel="icon" href="{{ banner.icon }}" />
+
         <!-- title -->
         <title>{{ banner.title }}</title>
     </head>
 
     <body>
+        <!-- header -->
         <header class="indigo z-depth-1" ng-controller="banner" >
             <img ng-src="{{ banner.avatar }}" alt="avatar" class="circle responsive-img" />
 
-            <h1 class="white-text" >{{ name }}</h1>
-            <h2 class="white-text" >{{ banner.content }}</h2>
+            <div class="container" >
+                <h1 class="yellow z-depth-1" >{{ name }}</h1>
+                <h2 class="white-text" >{{ banner.content }}</h2>
+            </div>
+
+            <div class="container" >
+                <ul>
+                    <li><a>qdfe</a></li>
+                    <li><a>qsd</a></li>
+                    <li><a>qsd</a></li>
+                    <li><a>qsd</a></li>
+                </ul>
+            </div>
         </header>
 
+        <!-- main -->
         <main>
 
         </main>
+
+        <!-- footer -->
+        <footer>
+
+        </footer>
 
         <!-- Compiled and minified JavaScript -->
         <script type="application/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" crossorigin="anonymous" ></script>
