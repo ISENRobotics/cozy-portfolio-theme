@@ -3,6 +3,23 @@
 var portfolio = angular.module( 'portfolio', ['ngAria', 'ngRoute', 'ngSanitize']);
 
 // ----------------------------------------------------------------------------
+// config
+portfolio.config(['$routeProvider', function( $routeProvider ) {
+    var routes = [
+        { link: '/presentation', controller: 'presentation', templateUrl: 'views/presentation.html' }
+    ];
+
+    for( var i in routes ) {
+        $routeProvider.when( routes[i].link, {
+            templateUrl: routes[i].templateUrl,
+            controller: routes[i].controller
+        });
+    }
+
+    $routeProvider.otherwise( '/presentation' );
+}]);
+
+// ----------------------------------------------------------------------------
 // controller
 portfolio.controller( 'head', ['$scope', '$http', function( $scope, $http ) {
     $http.get( 'portfolio/banner' ).then( function( res ) {

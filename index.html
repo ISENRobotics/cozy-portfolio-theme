@@ -38,7 +38,7 @@
 
             <div class="container" >
                 <ul>
-                    <li class="waves-effect" ><a>{{ presentation.title }}</a></li>
+                    <li class="waves-effect" ><a>{{ presentation.header }}</a></li>
                     <li class="waves-effect" ><a>{{ educations.header }}</a></li>
                     <li class="waves-effect" ><a>{{ skills.header }}</a></li>
                     <li class="waves-effect" ><a>{{ experiences.header }}</a></li>
@@ -54,7 +54,7 @@
 
         <!-- main -->
         <main>
-
+            <ng-view></ng-view>
         </main>
 
         <!-- footer -->
@@ -62,12 +62,12 @@
             <div class="container">
                 <div class="row white-text">
                     <div class="col s12 m8 l10">
-                        <h2>{{ banner.title }}</h2>
+                        <h2>{{ banner.header }}</h2>
                     </div>
 
                     <div class="col s12 m4 l2">
                         <ul>
-                            <li><a>{{ presentation.title }}</a></li>
+                            <li><a>{{ presentation.header }}</a></li>
                             <li><a>{{ educations.header }}</a></li>
                             <li><a>{{ skills.header }}</a></li>
                             <li><a>{{ experiences.header }}</a></li>
