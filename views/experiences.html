@@ -1,0 +1,16 @@
+ <div class="container">
+    <div class="timeline">
+        <div class="timeline-event" ng-repeat="content in experiences.contents" >
+            <div class="card-panel timeline-content">
+                <div class="card-content" >
+                    <h2 class="card-title" ng-bind-html="content.title + content.date | carriage" ></h2>
+                    <p ng-bind-html="content.content | carriage" ></p>
+                </div>
+            </div>
+
+            <div class="timeline-badge indigo white-text z-depth-1" >
+                <i class="material-icons">business_center</i>
+            </div>
+        </div>
+    </div>
+</div>

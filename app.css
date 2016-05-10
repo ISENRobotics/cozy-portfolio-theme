@@ -4,7 +4,9 @@ html, body {
 
     margin: 0;
     padding: 0;
+}
 
+body {
     line-height: 1.4;
     font-size: 11pt;
 
@@ -16,7 +18,7 @@ html, body {
     min-height: 100vh;
 }
 
-html > main, body > main {
+body > main {
     flex: 1 0 auto;
 }
 
@@ -25,16 +27,16 @@ html *, body * {
     text-rendering: optimizeLegibility;
 }
 
-header {
+.header {
     padding: 2rem;
     text-align: center;
 }
 
-header > img {
+.header > img {
     width: 120px;
 }
 
-header h1 {
+.header h1 {
     display: inline-block;
     font-style: italic;
     padding: 10px;
@@ -48,11 +50,11 @@ h4 { font-size: 1rem; }
 h5 { font-size: 0.9rem; }
 h6 { font-size: 0.8rem; }
 
-header > div {
+.header > div {
     position: relative;
 }
 
-header div > ul {
+.header div > ul {
     list-style: none;
     display: table;
 
@@ -63,7 +65,7 @@ header div > ul {
     width: 100%;
 }
 
-header div > ul > li.waves-effect {
+.header div > ul > li.waves-effect {
     display: table-cell;
 
     width: 20%;
@@ -75,9 +77,9 @@ header div > ul > li.waves-effect {
     color: white;
 }
 
-header div > ul > li > a,
-header div > ul > li > a:hover
-header div > ul > li > a:visited,
+.header div > ul > li > a,
+.header div > ul > li > a:hover
+.header div > ul > li > a:visited,
 footer div > ul > li > a,
 footer div > ul > li > a:hover
 footer div > ul > li > a:visited {
@@ -89,14 +91,22 @@ footer div > ul > li > a:visited {
     color: inherit;
 }
 
-header > div > a.btn-floating.waves-effect {
+.header > div > a.btn-floating.waves-effect {
     position: absolute;
 
-    bottom: calc( -2rem + -28px );
-    right: -56px;
+    bottom: -58px !important;
+    right: -28px;
+}
+
+.header {
+    padding: 30px;
 }
 
 footer h2,
 footer ul {
     margin: 1rem 0;
+}
+
+.float-right {
+    float: right;
 }
