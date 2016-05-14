@@ -63,13 +63,21 @@
         <footer class="page-footer indigo z-depth-1 no-padding" ng-controller="footer" >
             <div class="container">
                 <div class="row white-text" >
-                    <div class="col s12 m8 l10" >
+                    <div class="col s12 m4 l8" >
                         <h2>{{ banner.header }}</h2>
                     </div>
 
                     <div class="col s12 m4 l2">
                         <ul>
-                             <li><a ng-href="#/presentation" >{{ presentation.header }}</a></li>
+                            <li><a ng-href="{{ contact.twitter }}" >Twitter</a></li>
+                            <li><a ng-href="{{ contact.facebook }}" >Facebook</a></li>
+                            <li><a ng-href="{{ contact.linkedin }}" >Linked in</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m4 l2">
+                        <ul>
+                            <li><a ng-href="#/presentation" >{{ presentation.header }}</a></li>
                             <li><a ng-href="#/educations" >{{ educations.header }}</a></li>
                             <li><a ng-href="#/skills" >{{ skills.header }}</a></li>
                             <li><a ng-href="#/experiences" >{{ experiences.header }}</a></li>
